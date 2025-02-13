@@ -1,0 +1,21 @@
+{
+  "name": "vinted-scraper",
+  "version": "1.0.0",
+  "description": "A web scraper to find new items posted on Vinted and list them with their prices.",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.10"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.4",
+    "ts-node": "^10.4.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

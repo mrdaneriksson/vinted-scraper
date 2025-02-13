@@ -1,0 +1,54 @@
+Arguments: 
+  /Users/daneri/.nvm/versions/node/v18.17.1/bin/node /Users/daneri/.yarn/bin/yarn.js
+
+PATH: 
+  /Users/daneri/.codeium/windsurf/bin:/Users/daneri/.yarn/bin:/Users/daneri/.config/yarn/global/node_modules/.bin:/usr/local/opt/openssl/bin:/Users/daneri/.nvm/versions/node/v18.17.1/bin:/usr/local/opt/openssl/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/daneri/.codeium/windsurf/bin:/Users/daneri/.sdkman/candidates/java/current/bin:/Users/daneri/.yarn/bin:/Users/daneri/.config/yarn/global/node_modules/.bin:/usr/local/opt/openssl/bin:/Users/daneri/.nvm/versions/node/v18.17.1/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/daneri/Library/Application Support/Code - Insiders/User/globalStorage/github.copilot-chat/debugCommand
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  18.17.1
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: https://artifactory.services.kambi.com/artifactory/api/npm/npm/axios: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND officeproxy.services.kambi.com
+      at ClientRequest.onError (/Users/daneri/.yarn/lib/cli.js:152369:17)
+      at Object.onceWrapper (node:events:629:26)
+      at ClientRequest.emit (node:events:514:28)
+      at Socket.socketErrorListener (node:_http_client:501:9)
+      at Socket.emit (node:events:514:28)
+      at emitErrorNT (node:internal/streams/destroy:151:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  {
+    "name": "vinted-scraper",
+    "version": "1.0.0",
+    "description": "A web scraper to find new items posted on Vinted and list them with their prices.",
+    "main": "src/index.ts",
+    "scripts": {
+      "start": "ts-node src/index.ts",
+      "build": "tsc",
+      "test": "echo \"No tests specified\" && exit 0"
+    },
+    "dependencies": {
+      "axios": "^0.21.1",
+      "cheerio": "^1.0.0-rc.10"
+    },
+    "devDependencies": {
+      "typescript": "^4.4.4",
+      "ts-node": "^10.4.0"
+    },
+    "author": "",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
