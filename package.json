@@ -10,11 +10,12 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
-    "cheerio": "^1.0.0-rc.10"
+    "cheerio": "^1.0.0"
   },
   "devDependencies": {
-    "typescript": "^4.4.4",
-    "ts-node": "^10.4.0"
+    "@types/cheerio": "^0.22.35",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
   },
   "author": "",
   "license": "ISC"
