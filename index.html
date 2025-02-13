@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinted Scraper</title>
+</head>
+<body>
+  <h1>New Items on Vinted</h1>
+  <ul id="items"></ul>
+
+  <script>
+    fetch('scraped_data.json')
+      .then(response => response.json())
+      .then(items => {
+        const itemsList = document.getElementById('items');
+        items.forEach(item => {
+          const listItem = document.createElement('li');
+          listItem.textContent = `Title: ${item.title}, Price: ${item.price}`;
+          itemsList.appendChild(listItem);
+        });
+      });
+  </script>
+</body>
+</html>
