@@ -1,17 +1,7 @@
 import { VintedScraper } from './scraper';
+import * as fs from 'fs';
 
 const scraper = new VintedScraper();
-
-async function main() {
-    try {
-        const newItems = await scraper.fetchNewItems();
-        console.log('New items found:');
-        newItems.forEach(item => {
-            console.log(`${item.name} - ${item.price}`);
-        });
-    } catch (error) {
-        console.error('Error fetching new items:', error);
-    }
-}
-
-main();
+scraper.fetchNewItems().then(items => {
+  fs.writeFileSync('scraped_data.json', JSON.stringify(items, null, 2));
+});
