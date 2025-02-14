@@ -1,9 +1,10 @@
 export interface Item {
-    id: string;
-    name: string;
-    price: number;
-    link: string;
-    imageUrl: string;
+  id: string;
+  name: string;
+  link: string;
+  imageUrl: string;
+  title: string;
+  price: number;
 }
 
 export interface ScraperOptions {
